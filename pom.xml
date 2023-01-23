@@ -9,6 +9,9 @@
 	<url>http://maven.apache.org</url>
 	 
 	<properties>
+	    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+            <maven.compiler.source>1.8</maven.compiler.source>
+            <maven.compiler.target>1.8</maven.compiler.target>
 	        <docker.image.prefix>kammana</docker.image.prefix>
 	        <sonar.host.url>http://65.0.133.151:9000/</sonar.host.url>     
 	</properties>
@@ -19,11 +22,6 @@
 			<version>3.8.1</version>
 			<scope>test</scope>
 		</dependency>
-		<dependency>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-compiler-plugin</artifactId>
-            <version>3.10.1</version>
-        </dependency>
 	</dependencies>
 	
 	<distributionManagement>
@@ -46,6 +44,4 @@
 	</pluginRepositories>
    
 	 
-	 
-	
 </project>
